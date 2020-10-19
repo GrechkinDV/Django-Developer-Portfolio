@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Dmitriy Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand lighting" href="{% url 'index' %}">GDV Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link lighting" href="https://github.com/GrechkinDV" target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lighting" href="https://github.com/GrechkinDV">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="" style="min-width:50%!important;">
+                <div class="py-5 text-center">
+                    <h1 class="display-2">Dmitriy GV</h1>
+                    <h1 style="font-weight: 300;">The Unstoppable Programmer</h1>
+
+                    <p class="mb-0 mt-3">
+                        "Stay hungry. Stay foolish."
+                    </p>
+                    <footer class="blockquote-footer">
+                        <cite title="Source Title">Steve Jobs</cite>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="display-3 text-center text-dark my-3">Projects</h1>
+        <div class="container" id="projects">
+            <div class="row">
+                <div class="col">
+                    <div class="view overlay">
+                        <img height="400" class="card-img-top" src="{% static 'images/chemistry.jpg' %}" alt="Card image"/>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body elegant-color white-text rounded-bottom">
+                        <!-- Social shares button -->
+                        <!-- Title -->
+                        <h4 class="card-title">Django/Government Website</h4>
+                        <hr class="hr-light" />
+                        <!-- Text -->
+                        <p class="card-text white-text mb-4">
+                            Institute of Polymer Materials is the branch of Azerbaijan National Academy of Sciences.
+                            The official website shares information about Institute life - its activity, achievements, structures.
+                            Daily News Section provides actual information to website followers.
+                        </p>
+                        <div class="d-flex justify-content-around my-3">
+                            <img src="{% static 'images/python-logo.svg' %}" height="35em" />
+                            <i class="fab fa-js fa-2x amber-text"></i>
+                            <i class="fab fa-css3 fa-2x orange-text"></i>
+                            <i class="fab fa-html5 fa-2x deep-orange-text"></i>
+                        </div>
+                        <!-- Link -->
+
+                        <a class="btn winter-neva-gradient" href="#" target="_blank">
+                            <span class="text-dark">Visit</span>
+                        </a>
+                        <a class="btn winter-neva-gradient"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8000/" target="_blank">
+                            <span class="text-dark">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="view overlay">
+                        <img height="400" class="card-img-top" src="{% static 'images/diary.jpg' %}" alt="Card image"/>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body elegant-color white-text rounded-bottom">
+                        <!-- Social shares button -->
+                        <!-- Title -->
+                        <h4 class="card-title">Django/Online School Diary</h4>
+                        <hr class="hr-light" />
+                        <!-- Text -->
+                        <p class="card-text white-text mb-4">
+                            Initiative Project for  Ministry of Education.
+                            School authority fills pupils' daily marks, testings, attendance and notes.
+                            Complicated calculation of final grades is automated.
+                            Parents have access to get deep insight of own children school life.
+                         </p>
+                        <div class="d-flex justify-content-around my-3">
+                            <img src="{% static 'images/python-logo.svg' %}" height="35em" />
+                            <i class="fab fa-js fa-2x amber-text"></i>
+                            <i class="fab fa-css3 fa-2x orange-text"></i>
+                            <i class="fab fa-html5 fa-2x deep-orange-text"></i>
+                            <i class="fab fa-bootstrap fa-2x deep-purple-text"></i>
+                        </div>
+                        <!-- Link -->
+
+<!--                        <a class="btn winter-neva-gradient" href="#" target="_blank">-->
+<!--                            <span class="text-dark">Visit</span>-->
+<!--                        </a>-->
+                        <a class="btn winter-neva-gradient"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8000/" target="_blank">
+                            <span class="text-dark">Share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="view overlay">
+                        <img height="400" class="card-img-top" src="{% static 'images/ecommerce.jpg' %}" alt="Card image"/>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body elegant-color white-text rounded-bottom">
+                        <!-- Social shares button -->
+                        <!-- Title -->
+                        <h4 class="card-title">Django/Ecommerce Online Store</h4>
+                        <hr class="hr-light" />
+                        <!-- Text -->
+                        <p class="card-text white-text mb-4">
+                            Idea of selling digital and non-digital products requires suitable solution.
+                            Digital goods are shipped to email, while others to physical address.
+                            Items Card allows customers to view and edit orders.
+                            Registered users need to fill necessary information only once.
+                        </p>
+                        <div class="d-flex justify-content-around my-3">
+                            <img src="{% static 'images/python-logo.svg' %}" height="35em" />
+                            <i class="fab fa-js fa-2x amber-text"></i>
+                            <i class="fab fa-css3 fa-2x orange-text"></i>
+                            <i class="fab fa-html5 fa-2x deep-orange-text"></i>
+                            <i class="fab fa-bootstrap fa-2x deep-purple-text"></i>
+                        </div>
+                        <!-- Link -->
+
+                        <a class="btn winter-neva-gradient" href="https://github.com/GrechkinDV/Django-Online-Store" target="_blank">
+                            <span class="text-dark">Source Code</span>
+                        </a>
+                        <a class="btn winter-neva-gradient"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8000/" target="_blank">
+                            <span class="text-dark">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="view overlay">
+                        <img height="400" class="card-img-top" src="{% static 'images/tiktok.png' %}" alt="Card image"/>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body elegant-color white-text rounded-bottom">
+                        <!-- Social shares button -->
+                        <!-- Title -->
+                        <h4 class="card-title">Django/TikTok full information</h4>
+                        <hr class="hr-light" />
+                        <!-- Text -->
+                        <p class="card-text white-text mb-4">
+                            TikTok - the most trendy social media.
+                            Growth of its fame leads to interests increase of how to start up.
+                            <a href="http://socmedia.site">Socmedia.site</a> is full of articles and instructions about the mechanism of social medias work.
+                            <b>Website is more like experimentation with monetizing content.</b>
+                        </p>
+                        <div class="d-flex justify-content-around my-3">
+                            <img src="{% static 'images/python-logo.svg' %}" height="35em" />
+                            <i class="fab fa-js fa-2x amber-text"></i>
+                            <i class="fab fa-css3 fa-2x orange-text"></i>
+                            <i class="fab fa-html5 fa-2x deep-orange-text"></i>
+                        </div>
+                        <!-- Link -->
+
+                        <a class="btn winter-neva-gradient" href="http://socmedia.site" target="_blank">
+                            <span class="text-dark">Visit</span>
+                        </a>
+                        <a class="btn winter-neva-gradient"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8000/" target="_blank">
+                            <span class="text-dark">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="view overlay">
+                        <img height="400" class="card-img-top" src="{% static 'images/cookhub.jpg' %}" alt="Card image"/>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body elegant-color white-text rounded-bottom">
+                        <!-- Social shares button -->
+                        <!-- Title -->
+                        <h4 class="card-title">Kivy/CookHub - Bachelor Project</h4>
+                        <hr class="hr-light" />
+                        <!-- Text -->
+                        <p class="card-text white-text mb-4">
+                            Hundreds of recipes are stored in CookHub app.
+                            Random recipes are displayed on main page, but search can be done by tags, ingredients and names!
+                            A user is able to save favourites, create list of missing ingredients
+                            for dishes and store possessed products inside of Virtual Fridge.
+                        </p>
+                        <div class="d-flex justify-content-around my-3">
+                            <img src="{% static 'images/python-logo.svg' %}" height="35em" />
+                        </div>
+                        <!-- Link -->
+
+                        <a class="btn winter-neva-gradient" href="https://github.com/GrechkinDV/Kivy-CookHub" target="_blank">
+                            <span class="text-dark">Source Code</span>
+                        </a>
+                        <a class="btn winter-neva-gradient"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8000/" target="_blank">
+                            <span class="text-dark">Share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="view overlay">
+                        <img height="400" class="card-img-top" src="{% static 'images/leo.png' %}" alt="Card image"/>
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body elegant-color white-text rounded-bottom">
+                        <!-- Social shares button -->
+                        <!-- Title -->
+                        <h4 class="card-title">TKinter/LEO application</h4>
+                        <hr class="hr-light" />
+                        <!-- Text -->
+                        <p class="card-text white-text mb-4">
+                            The main purpose was to help own students to overcome learning process difficulties.
+                            The best solution  was: Creating an app that helps memorizing words'
+                            spelling and meaning, provides ability to get keen on idioms along with their practical
+                            usage. Finally, suggests a simple XO(Tic-tac-toe) game to take some rest.
+                        </p>
+                        <div class="d-flex justify-content-around my-3">
+                            <img src="{% static 'images/python-logo.svg' %}" height="35em" />
+                        </div>
+                        <!-- Link -->
+
+                        <a class="btn winter-neva-gradient" href="https://www.youtube.com/watch?v=RbpDNlhTp4w" target="_blank">
+                            <span class="text-dark">Demo</span>
+                        </a>
+                        <a class="btn winter-neva-gradient" href="https://github.com/GrechkinDV/Learning-English-Interactively" target="_blank">
+                            <span class="text-dark">Source Code</span>
+                        </a>
+
+                        <a class="btn winter-neva-gradient"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:8000/" target="_blank">
+                            <span class="text-dark">Share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container bg-dark">
+        <style type="text/css">
+            a:hover >img {
+                -webkit-transform:scale(2); /* Safari and Chrome */
+                -moz-transform:scale(2); /* Firefox */
+                -ms-transform:scale(2); /* IE 9 */
+                -o-transform:scale(2); /* Opera */
+                transform:scale(2);
+                transition:1s ease;
+            }
+        </style>
+        <ul class="nav justify-content-center py-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="https://github.com/GrechkinDV" target="_blank"><img src="{% static 'images/github.svg' %}"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"><img src="{% static 'images/linkedin.svg' %}"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

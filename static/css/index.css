@@ -1,0 +1,102 @@
+:root {
+  --mainColor: #ff9800;
+}
+
+.bg-dark{
+    background-color: #1c2331!important;
+}
+
+.nav-link{
+    color:white!important;
+    font-size:1.8rem;
+    font-weight: 300;
+}
+
+.navbar-brand{
+    color:white;
+    font-size:2rem;
+    font-weight: 400;
+}
+
+.navbar-brand:hover, .nav-link:hover{
+    color:white;
+}
+
+.lighting:hover {
+    background:
+        linear-gradient(
+        to right,
+        var(--mainColor) 0%,
+        var(--mainColor) 5px,
+        transparent
+     );
+    background-repeat: repeat-x;
+    background-size: 100%;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.footer-container{
+    position:relative;
+    margin-top:15vh;
+    bottom:0;
+}
+
+.container{
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.card-body{
+    background-color:#2e2e2e;
+    color:white;
+    height:100%;
+}
+
+.hr-light{
+    border-top: 1px solid #fff;
+}
+
+.amber-text {
+    color: #ffc107 !important;
+}
+
+.deep-orange-text {
+    color: #ff5722 !important;
+}
+
+.orange-text {
+     color: #ff9800 !important;
+}
+
+.deep-purple-text{
+    color:#673ab7 !important;
+}
+
+.winter-neva-gradient{
+    padding: 0.84rem 2.14rem;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.btn:active{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)!important;
+}
+
+.btn{
+    margin-top:3mm;
+}
+
+.winter-neva-gradient:hover >span{
+    font-weight:600;
+}
+
+.col{
+    margin-top:2vh!important;
+    margin-top:2vh!important;
+    overflow:hidden;
+}
+
+@media only screen and (max-width:800px){
+    .col{
+        flex-basis: auto;
+    }
+}
